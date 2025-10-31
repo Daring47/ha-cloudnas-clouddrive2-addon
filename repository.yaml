@@ -1,6 +1,10 @@
-name: "CloudDrive2"
-url: "https://github.com/Daring47/ha-cloudnas-clouddrive2-addon"
-maintainer: "Daring47"
+# repository.yaml（放在仓库根目录）
+name: "CloudNAS CloudDrive 2 Add-ons"  # 仓库名称（自定义）
+url: "https://github.com/Daring47/ha-cloudnas-clouddrive2-addon"  # 仓库URL（必须是你的仓库地址）
+maintainer: "Daring47"  # 维护者名称（自定义）
 addons:
+  # 声明你的加载项（slug需与addon.json中的slug一致）
   ha-cloudnas-clouddrive2:
-    folder: "."  // 加载项在仓库中的路径（当前目录）
+    folder: "."  # 加载项文件所在路径（.表示根目录，若在子文件夹则写子文件夹名，如"clouddrive2"）
+    name: "CloudNAS CloudDrive 2"  # 加载项名称（与addon.json中的name一致）
+    description: "集成CloudDrive 2到Home Assistant"  # 加载项描述
