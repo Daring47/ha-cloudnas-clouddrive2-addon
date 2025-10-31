@@ -1,0 +1,15 @@
+name: CloudNAS CloudDrive2 Add - on Repository
+description: Repository for CloudNAS CloudDrive2 Home Assistant add - on
+arch:
+  - aarch64
+  - amd64
+logo: https://static.dingtalk.com/media/lALPDfJ6RfPTC5PNAoDNAoA_640_640.png
+addons:
+  cloudnas_clouddrive2:
+    name: CloudNAS CloudDrive2 Add - on
+    description: Add - on for CloudNAS CloudDrive2 to provide cloud storage virtual disk functionality.
+    version: 0.9.10
+    slug: cloudnas_clouddrive2
+    maintainer: Your Name <your_email@example.com>
+    url: https://github.com/Daring47/ha - cloudnas - clouddrive2 - addon
+    available: true
