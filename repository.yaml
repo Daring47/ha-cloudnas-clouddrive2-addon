@@ -10,6 +10,6 @@ addons:
     description: Add - on for CloudNAS CloudDrive2 to provide cloud storage virtual disk functionality.
     version: 0.9.10
     slug: cloudnas_clouddrive2
-    maintainer: Your Name <your_email@example.com>
+    maintainer: daring47
     url: https://github.com/Daring47/ha - cloudnas - clouddrive2 - addon
     available: true
