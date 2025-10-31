@@ -1,23 +1,23 @@
 {
-  "name": "CloudNAS CloudDrive 2",
-  "description": "将CloudDrive 2集成到Home Assistant，实现云存储管理",
-  "version": "0.1.0",
-  "slug": "ha-cloudnas-clouddrive2",
-  "image": "ghcr.io/daring47/cloudnas_clouddrive2:0.9.10",
-  "arch": ["amd64", "armv7", "aarch64"],
-  "ports": {
-    "8080/tcp": 8080  // CloudDrive服务端口，需与镜像内实际端口一致
-  },
-  "volumes": [
-    "local_cloudnas:/config/cloudnas"  // 持久化配置目录，HA会自动创建
-  ],
-  "environment": {
-    "TZ": "Asia/Shanghai",  // 时区可根据需求调整
-    "CONFIG_DIR": "/config/cloudnas"  // 容器内配置目录，需与卷映射对应
-  },
-  "privileged": false,
-  "homeassistant": ">=2023.0.0",
-  "webui": "http://[ip]:[port]/",  // 网页界面访问格式
-  "startup": "application",
-  "boot": "auto"
+    "name": "CloudNAS CloudDrive 2",
+    "description": "将CloudDrive 2集成到Home Assistant，实现云存储管理",
+    "version": "0.1.0",
+    "slug": "ha - cloudnas - clouddrive2",
+    "image": "ghcr.io/daring47/cloudnas_clouddrive2:0.9.10",
+    "arch": ["amd64", "armv7", "aarch64"],
+    "ports": {
+        "8080/tcp": 8080
+    },
+    "volumes": [
+        "local_cloudnas:/config/cloudnas"
+    ],
+    "environment": {
+        "TZ": "Asia/Shanghai",
+        "CONFIG_DIR": "/config/cloudnas"
+    },
+    "privileged": false,
+    "homeassistant": ">=2023.0.0",
+    "webui": "http://[ip]:[port]/",
+    "startup": "application",
+    "boot": "auto"
 }
