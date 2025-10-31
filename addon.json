@@ -1,0 +1,20 @@
+{
+    "name": "CloudDrive2",
+    "description": "云存储虚拟磁盘加载项",
+    "version": "0.9.10",
+    "slug": "cloudnas_clouddrive2",
+    "arch": ["aarch64"],
+    "image": "ghcr.io/daring47/cloudnas_clouddrive2:0.9.10",
+    "boot": true,
+    "schema": {
+        "port": {
+            "type": "integer",
+            "description": "管理界面端口",
+            "default": 8080
+        }
+    },
+    "options": {
+        "port": 8080
+    },
+    "icon": "mdi:cloud - outline"
+}
